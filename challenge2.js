@@ -3,7 +3,7 @@ const prompt = require("prompt-sync")()
 //getting the speed limit for 70 
 function getDemerits(speed) {
     if (speed <= 70) {
-       return "Ok!!";
+       return "Ok !!";
        
     }
    
