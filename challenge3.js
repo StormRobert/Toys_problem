@@ -55,8 +55,10 @@ if (salary <= 5999 ){
 console.log (`Taxable: ${taxable}`)
     
 const nssf = salary * 0.06;
-const tax = taxable - nhif - nssf;
+const totalTax = taxable - nhif - nssf;
+const netPay = salary - totalTax;
 
 console.log (`NHIF: ${nhif}`)
 console.log (`NSSF: ${nssf}`)
-console.log (`Taxable from Income: ${tax}`)
+console.log (`Taxable from Income: ${totalTax}`)
+console.log (`Net Pay: ${netPay}`)
